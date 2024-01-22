@@ -24,6 +24,30 @@
       margin-left: auto;
       margin-right: auto;
     }
+
+    .section-1-img {
+      background: linear-gradient(180deg,
+          rgba(19, 19, 24, 0.5) 0%,
+          rgba(19, 19, 24, 0.5) 100%),
+        url("images/2.png");
+      ;
+    }
+
+    .section-2-img {
+      background: linear-gradient(180deg,
+          rgba(19, 19, 24, 0.5) 0%,
+          rgba(19, 19, 24, 0.5) 100%),
+        url("images/3.png");
+      ;
+    }
+
+    .section-3-img {
+      background: linear-gradient(180deg,
+          rgba(19, 19, 24, 0.5) 0%,
+          rgba(19, 19, 24, 0.5) 100%),
+        url("images/4.png");
+      ;
+    }
   </style>
 </head>
 
@@ -64,7 +88,8 @@
       </div>
       <div class="navbar-end flex gap-4 cursor-pointer ">
         <ion-icon name="search-outline" class="hidden lg:block"></ion-icon>
-        <a class="btn bg-[#FF4240] text-white font-bold px-4 lg:px-6 text-base lg:text-xl">Get Ticket</a>
+        <a class="btn bg-[#FF4240] hover:bg-[#ff5553] text-white font-bold px-4 lg:px-6 text-base lg:text-xl">Get
+          Ticket</a>
       </div>
     </div>
 
@@ -77,7 +102,7 @@
             <img src="Images/1.png" class="w-full" />
             <div
               class="absolute flex justify-center lg:justify-start gap-4 transform -translate-y-1/2 left-5 right-5 bottom-0">
-              <a href="#slide4" class="btn btn-circle bg-[#131318] text-white text-3xl font-normal">❮</a>
+              <a href="#slide3" class="btn btn-circle bg-[#131318] text-white text-3xl font-normal">❮</a>
               <a href="#slide2" class="btn btn-circle bg-[#131318] text-white text-3xl font-normal">❯</a>
             </div>
           </div>
@@ -101,7 +126,7 @@
 
         <!-- banner badge -->
         <div
-          class="bg-black text-white lg:w-1/2 lg:absolute bottom-0 right-0 lg:m-10 mt-4 p-8 rounded-xl static w-full">
+          class="bg-black text-white lg:w-1/2 lg:absolute bottom-0 right-0 lg:m-10 mt-4 lg:mt-0 p-8 rounded-xl static w-full">
           <h3 class="text-2xl font-extrabold mb-4">Meet all the heroes from the field</h3>
           <p class="font-semibold text-white/60">Meet our hockey heroes! Captains, scorers, defenders, and rising stars
             – a team united by passion, skill, and determination.</p>
@@ -109,7 +134,162 @@
       </div>
     </div>
   </header>
-  <main></main>
+  <main class="container-custom">
+    <!-- Professional Hockey Section -->
+    <section id="professional" class="my-24  ">
+      <div class="text-center  border border-y-2 border-x-0 border-dashed border-[#131318]/20 p-12">
+        <h3 class="text-4xl font-extrabold text-[#131318] mb-6">Professional Hockeys Club</h3>
+        <p class="text-[#131318]/60 font-semibold max-w-2xl mx-auto">
+          Discover the elite athletes of our professional hockey club – leaders, scorers, defenders, and rising stars,
+          united in excellence and passion.</p>
+      </div>
+
+      <!-- stats part -->
+      <div class="grid grid-cols-1 gap-y-8 md:gap-x-8 lg:gap-y-0 md:grid-cols-2 lg:grid-cols-4 mt-16">
+
+        <!-- stat item 1 -->
+        <div class="flex flex-col items-center text-center">
+          <!-- Circular Progress -->
+          <div class="relative h-40 w-40">
+            <svg class="h-full w-full" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+              <!-- Background Circle -->
+              <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-red-500 " stroke-width="3">
+              </circle>
+              <!-- Progress Circle inside a group with rotation -->
+              <g class="origin-center -rotate-90 transform">
+                <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200 " stroke-width="3"
+                  stroke-dasharray="100" stroke-dashoffset="75"></circle>
+              </g>
+            </svg>
+            <!-- Percentage Text -->
+            <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
+              <span class="text-center text-3xl font-extrabold text-gray-800">87%</span>
+            </div>
+          </div>
+          <!-- End Circular Progress -->
+          <h3 class="text-xl text-[#131318] font-semibold mt-4 mb-1">Prayer Facility</h3>
+          <p class="text-[#131318]/60">Sacred space for serene spiritual reflection</p>
+        </div>
+
+        <!-- stat item 2 -->
+        <div class="flex flex-col items-center text-center">
+          <!-- Circular Progress -->
+          <div class="relative h-40 w-40">
+            <svg class="h-full w-full" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+              <!-- Background Circle -->
+              <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-green-500 " stroke-width="3">
+              </circle>
+              <!-- Progress Circle inside a group with rotation -->
+              <g class="origin-center -rotate-90 transform">
+                <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200 " stroke-width="3"
+                  stroke-dasharray="100" stroke-dashoffset="75"></circle>
+              </g>
+            </svg>
+            <!-- Percentage Text -->
+            <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
+              <span class="text-center text-3xl font-extrabold text-gray-800">95%</span>
+            </div>
+          </div>
+          <!-- End Circular Progress -->
+          <h3 class="text-xl text-[#131318] font-semibold mt-4 mb-1">Experienced Coach</h3>
+          <p class="text-[#131318]/60">Guiding excellence, shaping futures with expertise</p>
+        </div>
+
+        <!-- stat item 3 -->
+        <div class="flex flex-col items-center text-center">
+          <!-- Circular Progress -->
+          <div class="relative h-40 w-40">
+            <svg class="h-full w-full" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+              <!-- Background Circle -->
+              <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-yellow-600 " stroke-width="3">
+              </circle>
+              <!-- Progress Circle inside a group with rotation -->
+              <g class="origin-center -rotate-90 transform">
+                <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200 " stroke-width="3"
+                  stroke-dasharray="100" stroke-dashoffset="75"></circle>
+              </g>
+            </svg>
+            <!-- Percentage Text -->
+            <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
+              <span class="text-center text-3xl font-extrabold text-gray-800">90%</span>
+            </div>
+          </div>
+          <!-- End Circular Progress -->
+          <h3 class="text-xl text-[#131318] font-semibold mt-4 mb-1">Senior Player</h3>
+          <p class="text-[#131318]/60">Elite arena shaping seasoned player mastery</p>
+        </div>
+
+        <!-- stat item 4 -->
+        <div class="flex flex-col items-center text-center">
+          <!-- Circular Progress -->
+          <div class="relative h-40 w-40">
+            <svg class="h-full w-full" width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+              <!-- Background Circle -->
+              <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-blue-500 " stroke-width="3">
+              </circle>
+              <!-- Progress Circle inside a group with rotation -->
+              <g class="origin-center -rotate-90 transform">
+                <circle cx="18" cy="18" r="16" fill="none" class="stroke-current text-gray-200 " stroke-width="3"
+                  stroke-dasharray="100" stroke-dashoffset="75"></circle>
+              </g>
+            </svg>
+            <!-- Percentage Text -->
+            <div class="absolute top-1/2 start-1/2 transform -translate-y-1/2 -translate-x-1/2">
+              <span class="text-center text-3xl font-extrabold text-gray-800">80%</span>
+            </div>
+          </div>
+          <!-- End Circular Progress -->
+          <h3 class="text-xl text-[#131318] font-semibold mt-4 mb-1">Training Ground</h3>
+          <p class="text-[#131318]/60">Foundation for skills, teamwork, and triumph</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Program Sections -->
+    <section id="program" class="my-24">
+      <div class="text-center border border-y-2 border-x-0 border-dashed border-[#131318]/20 p-12">
+        <h3 class="text-4xl font-extrabold text-[#131318] mb-8">Program Sections</h3>
+        <p class="font-semibold text-[#131318]/60 max-w-3xl mx-auto">Dive into our comprehensive program section,
+          offering
+          tailored
+          training, strategic coaching, fitness regimens, and a holistic approach to player development</p>
+      </div>
+      <!-- Image part -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 py-12 gap-x-6 gap-y-6 ">
+        <!-- section 1 -->
+        <div class="bg-cover bg-center section-1-img bg-rounded-xl text-white px-10 pt-24 pb-10 relative rounded-2xl">
+          <h3 class="font-extrabold text-3xl mb-4">Junior Program</h3>
+          <p class="mb-6">Discover our dynamic junior program, fostering young talent through expert coaching,
+            skill-building
+            sessions,
+            team camaraderie, and a supportive environment that nurtures their passion for hockey from the start</p>
+          <button class="btn bg-[#FF4240] hover:bg-[#ff5553]">Register Now!</button>
+        </div>
+
+        <!-- section 2 -->
+        <div class="bg-cover bg-center section-2-img bg-rounded-xl text-white px-10 pt-24 pb-10 relative rounded-2xl">
+          <h3 class="font-extrabold text-3xl mb-4">Teenager Program</h3>
+          <p class="mb-6">Empower teens through our specialized program, fostering skills, leadership, and camaraderie.
+            Unlock potential, forge friendships, and embark on a transformative hockey journey together</p>
+          <button class="btn bg-[#FF4240] hover:bg-[#ff5553]">Register Now!</button>
+        </div>
+
+        <!-- section 3 -->
+        <div
+          class="bg-cover bg-center section-3-img bg-rounded-xl text-white px-10 pt-24 pb-10 relative rounded-2xl lg:col-span-2">
+          <div class="w-1/2">
+            <h3 class="font-extrabold text-3xl mb-4">Professional Program</h3>
+            <p class="mb-6">Elevate your game with our professional program, designed for elite athletes. Experience
+              top-tier coaching, cutting-edge training, and unparalleled support for peak performance and success at the
+              highest level</p>
+            <button class="btn bg-[#FF4240] hover:bg-[#ff5553]">Register Now!</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
   <footer></footer>
 </body>
 
