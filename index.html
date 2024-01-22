@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <title>Hockeys</title>
+  <style>
+    body {
+      font-family: 'Manrope', sans-serif;
+    }
+
+    .container-custom {
+      max-width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="container-custom">
+    <!-- nav section -->
+    <div class="navbar bg-base-100 my-12">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a class="text-[#424247] hover:text-[#FF4240] hover:bg-white">Home</a></li>
+            <li><a class="text-[#424247] hover:text-[#FF4240] hover:bg-white">About</a></li>
+            <li><a class="text-[#424247] hover:text-[#FF4240] hover:bg-white">Pages</a></li>
+            <li><a class="text-[#424247] hover:text-[#FF4240] hover:bg-white">Blog</a></li>
+            <li><a class="text-[#424247] hover:text-[#FF4240] hover:bg-white">Contact</a></li>
+            <li><a class="text-[#424247] hover:text-[#FF4240] hover:bg-white"> <ion-icon
+                  name="search-outline"></ion-icon>
+              </a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost hover:bg-white text-[#131318] text-2xl lg:text-4xl font-extrabold ">Hockey<span
+            class="text-[#FF4240] -mx-[10px]">’</span>s</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a class="text-[#424247] hover:text-primaryRed hover:bg-white">Home</a></li>
+          <li><a class="text-[#424247] hover:text-[#FF4240] hover:bg-white">About</a></li>
+          <li><a class="text-[#424247] hover:text-[#FF4240] hover:bg-white">Pages</a></li>
+          <li><a class="text-[#424247] hover:text-[#FF4240] hover:bg-white">Blog</a></li>
+          <li><a class="text-[#424247] hover:text-[#FF4240] hover:bg-white">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end flex gap-4 cursor-pointer ">
+        <ion-icon name="search-outline" class="hidden lg:block"></ion-icon>
+        <a class="btn bg-[#FF4240] text-white font-bold px-4 lg:px-6 text-base lg:text-xl">Get Ticket</a>
+      </div>
+    </div>
+
+    <!-- banner section -->
+    <div id="banner">
+      <div class="relative">
+        <!-- slider code here -->
+        <div class="carousel w-full h-full lg:h-[550px]">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full" />
+            <div
+              class="absolute flex justify-center lg:justify-start gap-4 transform -translate-y-1/2 left-5 right-5 bottom-0">
+              <a href="#slide4" class="btn btn-circle bg-[#131318] text-white text-3xl font-normal">❮</a>
+              <a href="#slide2" class="btn btn-circle bg-[#131318] text-white text-3xl font-normal">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="Images/2.png" class="w-full" />
+            <div
+              class="absolute flex justify-center lg:justify-start gap-4 transform -translate-y-1/2 left-5 right-5 bottom-0">
+              <a href="#slide1" class="btn btn-circle bg-[#131318] text-white text-3xl font-normal">❮</a>
+              <a href="#slide3" class="btn btn-circle bg-[#131318] text-white text-3xl font-normal">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="Images/3.png" class="w-full" />
+            <div
+              class="absolute flex justify-center lg:justify-start gap-4 transform -translate-y-1/2 left-5 right-5 bottom-0">
+              <a href="#slide2" class="btn btn-circle bg-[#131318] text-white text-3xl font-normal">❮</a>
+              <a href="#slide1" class="btn btn-circle bg-[#131318] text-white text-3xl font-normal">❯</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- banner badge -->
+        <div
+          class="bg-black text-white lg:w-1/2 lg:absolute bottom-0 right-0 lg:m-10 mt-4 p-8 rounded-xl static w-full">
+          <h3 class="text-2xl font-extrabold mb-4">Meet all the heroes from the field</h3>
+          <p class="font-semibold text-white/60">Meet our hockey heroes! Captains, scorers, defenders, and rising stars
+            – a team united by passion, skill, and determination.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main></main>
+  <footer></footer>
+</body>
+
+</html>
