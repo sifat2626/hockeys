@@ -674,31 +674,31 @@
         </p>
       </div>
 
-      <div class="grid grid-cols-12 mt-12 gap-8">
-        <div class="col-span-4 border-2 border-[#131318]/10 rounded-xl">
+      <div class="grid lg:grid-cols-12 mt-12 gap-8">
+        <div class="lg:col-span-4 border-2 border-[#131318]/10 rounded-xl">
           <!-- card 1 -->
-          <div class="p-8 pb-12 bg-[#BCED6D]/10 rounded-xl m-12">
+          <div class="p-4 lg:p-8 lg:pb-12 bg-[#BCED6D]/10 rounded-xl m-4 lg:m-12">
             <img src="Images/Group 1171275317.png" alt="">
             <p class="text-[#131318]/40 text-xs mt-5 mb-1">Phone Number : </p>
             <h3 class="text-sm font-bold">(+62) 123-321-543</h3>
           </div>
           <!-- card 2 -->
-          <div class="p-8 pb-12 bg-[#BCED6D]/10 rounded-xl m-12">
+          <div class="p-4 lg:p-8 lg:pb-12 bg-[#BCED6D]/10 rounded-xl m-4 lg:m-12">
             <img src="Images/Group 1171275318.png" alt="">
             <p class="text-[#131318]/40 text-xs mt-5 mb-1">Email : </p>
             <h3 class="text-sm font-bold">hockeys@support.com</h3>
           </div>
           <!-- card 3 -->
-          <div class="p-8 pb-12 bg-[#BCED6D]/10 rounded-xl m-12">
+          <div class="p-4 lg:p-8 lg:pb-12 bg-[#BCED6D]/10 rounded-xl m-4 lg:m-12">
             <img src="Images/Group 1171275321.png" alt="">
             <p class="text-[#131318]/40 text-xs mt-5 mb-1">Location : </p>
             <h3 class="text-sm font-bold">152/1 Mohakhali Wireless Gate</h3>
           </div>
         </div>
 
-        <div class="col-span-8">
+        <div class="lg:col-span-8">
           <form action="">
-            <div class="grid grid-cols-2 gap-x-4 gap-y-6">
+            <div class="md:grid md:grid-cols-2 gap-x-4 space-y-6 lg:space-y-0 gap-y-6">
               <div class="">
                 <h3 class="text-[#131318] text-xl font-bold mb-4">Your Name</h3>
                 <input type="text" placeholder="Enter your full name" class="w-full bg-[#131318]/5 p-4 rounded-xl">
@@ -723,7 +723,7 @@
                   placeholder="Write your message"></textarea>
               </div>
 
-              <button class="bg-[#FF4240] justify-stretch col-span-2 text-center text-white px-6 py-4 rounded-xl">Send
+              <button class="bg-[#FF4240] w-full col-span-2 text-center text-white px-6 py-4 rounded-xl">Send
                 Message</button>
             </div>
 
@@ -732,10 +732,73 @@
       </div>
 
       <!-- social links -->
+      <div class="text-center mt-12 p-9 bg-[#131318]/5 rounded-xl">
+        <h3 class="text-[#131318] text-2xl font-extrabold">Social Media</h3>
+        <div class="mt-6 flex justify-center gap-4">
+          <ion-icon name="logo-twitter" class="text-[#131318] text-2xl"></ion-icon>
+          <ion-icon name="logo-facebook" class="text-[#131318] text-2xl"></ion-icon>
+          <ion-icon name="logo-instagram" class="text-[#131318] text-2xl"></ion-icon>
+          <ion-icon name="logo-github" class="text-[#131318] text-2xl"></ion-icon>
+        </div>
+      </div>
 
     </section>
   </main>
-  <footer></footer>
+  <footer class="bg-[#131318] py-24">
+    <div class="grid grid-cols-12 max-w-[85%] mx-auto">
+      <div class="col-span-5 text-white">
+        <h3 class="text-3xl font-extrabold mb-4">Get In Touch</h3>
+        <p class="text-white/60 font-semibold mb-6">Questions, collaborations, or just a hello? We're here and ready to
+          connect. Get in
+          touch today!</p>
+        <div class="flex items-center gap-3 mb-4">
+          <ion-icon name="mail-outline" class="text-[#FF4240]"></ion-icon>
+          <p>hockeys@support.com</p>
+        </div>
+        <div class="flex items-center gap-3 mb-4">
+          <ion-icon name="call-outline" class="text-[#FF4240]"></ion-icon>
+          <p>(+62) 123-321-543</p>
+        </div>
+      </div>
+
+      <div class="col-span-7 ">
+        <div class="grid grid-cols-12">
+          <div class="col-span-4 grid justify-end">
+            <h3 class="text-white text-lg font-bold mb-7">Company</h3>
+            <ul class="flex flex-col gap-4">
+              <li class="text-white/60">About us</li>
+              <li class="text-white/60">Leadership </li>
+              <li class="text-white/60">Careers </li>
+              <li class="text-white/60">News & Article</li>
+              <li class="text-white/60">Legal Notice</li>
+            </ul>
+          </div>
+
+          <div class="col-span-4 grid justify-end">
+            <h3 class="text-white text-lg font-bold mb-7">Support</h3>
+            <ul class="flex flex-col gap-4">
+              <li class="text-white/60">Help Center</li>
+              <li class="text-white/60">FAQ </li>
+              <li class="text-white/60">Ticket Suppor </li>
+              <li class="text-white/60">Contact Us</li>
+            </ul>
+          </div>
+
+          <div class="col-span-4 grid justify-end">
+            <h3 class="text-white text-lg font-bold mb-7">Services</h3>
+            <ul class="flex flex-col gap-4">
+              <li class="text-white/60">Academy </li>
+              <li class="text-white/60">Group Lesson </li>
+              <li class="text-white/60">Private Lesson </li>
+              <li class="text-white/60">Hockeys for kids</li>
+              <li class="text-white/60">Hockeys for Adult</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
 </body>
 
 </html>
